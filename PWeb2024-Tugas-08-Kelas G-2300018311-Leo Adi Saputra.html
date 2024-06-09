@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat From Validasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+</head>
+<body>
+    <div class="container">
+        <form autocomplete="off">
+            <h4>Validasi Akun</h4>
+            <div class="input-section">
+                <label>Nama<span class="required-color">*</span></label>
+                <input type="text" placeholder="Masukan Nama" id="first-name-input" required/>
+                <span id="first-name-error" class="hide required-color error-message">Inputan tidak valid</span>
+                <span id="empty-first-name" class="hide required-color error-message">Nama tidak boleh dikosongkan</span>
+            </div>
+            <div class="input-section">
+                <label>Email<span class="required-color">*</span></label>
+                <input type="email" placeholder="Masukan Email" id="email" required/>
+                <span id="email-error" class="hide required-color error-message">Inputan tidak valid</span>
+                <span id="empty-email" class="hide required-color error-message">Email tidak boleh dikosongkan</span>
+            </div>
+            <div class="input-section">
+                <label>No.Telepon<span class="required-color">*</span></label>
+                <input type="email" placeholder="Masukan No.Telepon" id="phone" required/>
+                <span id="phone-error" class="hide required-color error-message">No.telepon harus 12 digit</span>
+                <span id="empty-phone" class="hide required-color error-message">No.telepon tidak boleh dikosongkan</span>
+            </div>
+            <div class="input-section">
+                <label>Password<span class="required-color">*</span></label>
+                <input type="password" placeholder="Masukan Password" id="password" required/>
+                <span id="password-error" class="hide required-color error-message">Password harus 8 karakter</span>
+                <span id="empty-password" class="hide required-color error-message">Password tidak boleh dikosongkan</span>
+            </div>
+            <div class="input-section">
+                <label>Konfirmasi Ulang Password<span class="required-color">*</span></label>
+                <input type="konfirmasi ulang password" placeholder="konfirmasi ulang password" id="verify-password" required/>
+                <span id="verify-password-error" class="hide required-color error-message">Harus sama dengan password sebelumnya</span>
+                <span id="empty-verify-password" class="hide required-color error-message">Password tidak boleh dikosongkan</span>
+            </div>
+            <button id="submit-button">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>   
